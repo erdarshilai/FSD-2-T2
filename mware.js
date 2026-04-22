@@ -1,6 +1,13 @@
 const express = require("express");
 const app = express();
 
+function f1(req, res, next) { 
+    console.log("HEllo WOerejf");
+    next();
+}
+
+app.use("/about", f1);
+
 app.get("/", (req, res) => {
     res.send("<h1>Home Page</h1>");
 })
