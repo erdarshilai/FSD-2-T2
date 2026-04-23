@@ -19,7 +19,6 @@ app.post("/calc", (req, res) => {
     else
         res.send(`Division is ${n1 / n2}`)
 
-
 });
 
 app.listen(3030);
